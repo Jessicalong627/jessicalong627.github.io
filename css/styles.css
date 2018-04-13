@@ -1,0 +1,314 @@
+* {
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*   Header    */
+
+.hello {
+  padding-top: 80px;
+  margin-left: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  height: 29px;
+}
+
+.logo {
+	transition: .3s;
+}
+
+.logo:hover {
+  border-radius:0;
+  background-color:#fb4b60;
+  transform: scale(1.2);
+}
+.logo:hover .solid  {
+  display: none;
+}
+.logo:hover .initials {
+  fill: white;
+}
+
+.logo:hover .solid {
+  fill: white;
+}
+
+.initials {
+    fill: #231F20;
+}
+
+.jumbotron {
+  background-image: url('../images/mobile-header.png');
+  background-size:320px 500px;
+  object-fit: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  height:500px;
+  padding: 10px 0px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    font-weight: bold;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 7px;
+    background: #f8e71c;
+    transition: width .4s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.custom-toggler.navbar-toggler:focus {
+    outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#f8e71c' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.text-style-1{
+  font-weight: 500;
+}
+
+.name {
+  border-bottom: 5px solid #f8e71c;
+}
+
+.dashes {
+  color: #f8e71c;
+}
+
+.dashes-white {
+  color: white;
+}
+
+/*    Main Projects   */
+
+.view-code {
+  opacity: 0;
+}
+
+.macbook {
+  margin-top: 35px;
+}
+
+.background {
+  background-color: #f8e71c;
+}
+
+.project-titles:after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    border-bottom: 4px solid #f8e71c;
+}
+
+.intro {
+  padding: 40px 0px;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 1.3;
+  vertical-align: text-bottom;
+  text-align: left;
+  color: #000000;
+}
+
+.project-titles {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.macbook-two {
+  display: none;
+}
+
+/*   About Me    */
+
+.about-me-description {
+padding-bottom: 60px;
+}
+
+.about-me-intro {
+  line-height: 1.6;
+}
+
+.about-me-name {
+ font-size: 24px;
+ font-weight: bold;
+ height: 29px;
+ padding-top: 80px;
+ padding-bottom: 80px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*  Contact     */
+
+.footer {
+  padding: 60px 20px;
+}
+
+a {
+  color: black;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+  padding-bottom: 30px;
+  font-size: 24px;
+ font-weight: bold;
+}
+
+.city {
+  margin-bottom: 0;
+}
+
+
+
+
+  /*   Tablet   */
+@media only screen and (min-width: 768px) {
+
+  /*   Header    */
+  .intro {
+    font-size: 65px;
+    padding: 50px 20px;
+  }
+  .hello {
+      font-size: 40px;
+      padding-top: 120px;
+  }
+  .jumbotron {
+    background-image: url('../images/header-image-768@3x.png');
+    background-size:768px 800px;
+    height:800px;
+  }
+
+
+  /*    Main Projects   */
+
+  .macbook-two {
+    display: none;
+  }
+
+  .macbook {
+    margin-top: 0px;
+  }
+
+  .project-whole {
+    padding-top: 40px;
+  }
+
+  .project-titles {
+      padding-top: 0px;
+   }
+
+
+  /*   About Me    */
+
+  .about-me-name {
+    font-size: 40px;
+    padding-bottom: 100px;
+     height: 49px;
+  }
+
+  .about-me-description {
+  padding-bottom: 80px;
+  }
+
+  .about-me-intro {
+    width:450px;
+    margin: 0 auto;
+  }
+
+
+  /*  Contact     */
+  .contact {
+    font-size: 40px;
+  }
+
+}
+
+  /*   Desktop  */
+@media only screen and (min-width: 1024px) {
+
+  /*   Header    */
+
+  .jumbotron {
+    background-image: url('../images/header-image-1024@3x.png');
+    background-size:1024px 800px;
+  }
+
+  .hello {
+      padding-top: 160px;
+  }
+
+  .about-me-description {
+  padding-bottom: 110px;
+  }
+
+  /*    Main Projects   */
+
+  .macbook {
+    display: none;
+  }
+
+  .macbook-two {
+    display: block;
+  }
+
+  .view-code {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .background-yellow:hover .view-code {
+  opacity: 1;
+  }
+  .project-whole {
+    padding-top: 50px;
+  }
+
+  .background-yellow {
+      transition: .4s ease-in-out;
+  }
+
+  .background-yellow:hover {
+      background-color: #f8e71c;
+      margin-top: 10px;
+      text-align: center;
+      padding-bottom: 20px;
+  }
+
+  .macbook-two {
+    transition: 1s ease-in-out;
+    margin: 0 auto;
+  }
+
+  .background-yellow:hover .macbook-two{
+   position: relative;
+   top: -30px;
+  }
+
+}
