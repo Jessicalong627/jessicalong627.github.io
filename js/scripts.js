@@ -13,4 +13,4 @@ setTimeout(() => {
         instance.unfreeze();
     }, 2000);
 
-}, 11000);
+}, 14000);
